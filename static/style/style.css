@@ -1,0 +1,20 @@
+.h4 {
+    text-align: center;
+    color: grey;
+}
+
+.header {
+    margin-bottom: 40px;
+}
+
+.conatainer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.answer_list {
+    width: max-content;
+    margin: 40px auto;
+    font-size: 25px;
+    list-style-type: none;
+}
