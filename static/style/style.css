@@ -3,6 +3,12 @@
     color: grey;
 }
 
+.login_header {
+    background-image: url(../img/MARS-2-7.png);
+    background-repeat: no-repeat;
+    padding-left: 155px;
+}
+
 .header {
     margin-bottom: 40px;
 }
