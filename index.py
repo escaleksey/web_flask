@@ -53,5 +53,12 @@ def login():
     return render_template('login.html', title='Авторизация', form=form)
 
 
+@app.route('/table/<gender>/<int:age>')
+def table(gender, age):
+    param = {}
+    param['title'] = 'Домашняя страница'
+    param['gender'] = gender
+    param['age'] = age
+    return render_template('table_param.html', **param)
 if __name__ == '__main__':
     app.run(port=8080, host='127.0.0.1')

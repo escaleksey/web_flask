@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1 class="section_header">Оформление каюты</h1>
+    <table class="table main_table">
+        <tr>
+            <th>Цвет</th>
+            <th>Эмблема</th>
+        </tr>
+        <tr>
+            {% if gender == 'male'%}
+                {% if age < 18%}
+                    <td class="color_m_0-18"></td>
+                    <td><img src="/static/img/1.jpg" alt=""></td>
+                {% else %}
+                    <td class="color_m_18"></td>
+                    <td><img src="/static/img/2.png" alt=""></td>
+                {% endif %}
+            {% elif gender == 'female'%}
+                {% if age < 18%}
+                    <td class="color_f_0-18"></td>
+                    <td><img src="/static/img/3.jpg" alt=""></td>
+                {% else %}
+                    <td class="color_f_18"></td>
+                    <td><img src="/static/img/4.png" alt=""></td>
+                {% endif %}
+            {% else %}
+                <p>Укажите пол (male/female)</p>
+            {% endif %}
+        </tr>
+    </table>
+{% endblock %}

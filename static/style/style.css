@@ -1,4 +1,14 @@
+th {
+    width: 50%;
+}
+
+.main_table {
+    text-align: center;
+}
+
+
 .h4 {
+    padding: 30px 0;
     text-align: center;
     color: grey;
 }
@@ -9,13 +19,16 @@
     padding-left: 155px;
 }
 
-.header {
+.section_header {
+    text-align: center;
     margin-bottom: 40px;
 }
+
 
 .conatainer {
     max-width: 1200px;
     margin: 0 auto;
+    padding-top: 40px;
 }
 
 .answer_list {
@@ -23,4 +36,20 @@
     margin: 40px auto;
     font-size: 25px;
     list-style-type: none;
+}
+
+.color_m_0-18 {
+    background-color: blue;
+}
+
+.color_m_18 {
+    background-color: lightblue;
+}
+
+.color_f_0-18 {
+    background-color: palevioletred;
+}
+
+.color_f_18 {
+    background-color: red;
 }
