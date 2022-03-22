@@ -38,6 +38,13 @@ def answer():
 
     return render_template('answer.html', **param)
 
+@app.route('/distribution')
+def distribution():
+    param = {}
+    param['title'] = 'Каюты'
+    param['persons'] = ['Евгений', 'Андрей', 'Артур', 'Никита']
+    return render_template('distribution.html', **param)
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     form = LoginForm()

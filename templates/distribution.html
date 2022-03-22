@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1 class="login_header">Размещение по каютам</h1>
+    {% for item in persons %}
+        <div>
+            Каюта №{{loop.index }} - {{item}} {% if loop.first %} - Капитан {% endif %}
+        </div>
+    {% endfor %}
+{% endblock %}
